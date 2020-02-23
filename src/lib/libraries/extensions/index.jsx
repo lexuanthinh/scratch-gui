@@ -7,6 +7,9 @@ import musicInsetIconURL from './music/music-small.svg';
 import penIconURL from './pen/pen.png';
 import penInsetIconURL from './pen/pen-small.svg';
 
+import dssamaIconURL from './pen/pen.png';
+import dssamaInsetIconURL from './pen/pen-small.svg';
+
 import videoSensingIconURL from './videoSensing/video-sensing.png';
 import videoSensingInsetIconURL from './videoSensing/video-sensing-small.svg';
 
@@ -317,5 +320,25 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Dssama"
+                description="Name for the 'Dssama' extension"
+                id="gui.extension.dssama.name"
+            />
+        ),
+        extensionId: 'dssama',
+        iconURL: dssamaIconURL,
+        insetIconURL: dssamaInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Ingest some CSV File :)"
+                description="Description for the 'Dssama' extension"
+                id="gui.extension.dssama.description"
+            />
+        ),
+        featured: true
     }
 ];
