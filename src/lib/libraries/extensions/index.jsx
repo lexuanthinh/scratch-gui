@@ -10,6 +10,9 @@ import penInsetIconURL from './pen/pen-small.svg';
 import dssamaIconURL from './pen/pen.png';
 import dssamaInsetIconURL from './pen/pen-small.svg';
 
+import weatherIconURL from './weather/weather.png';
+import weatherInsetIconURL from './weather/weather-small.png'
+
 import videoSensingIconURL from './videoSensing/video-sensing.png';
 import videoSensingInsetIconURL from './videoSensing/video-sensing-small.svg';
 
@@ -337,6 +340,26 @@ export default [
                 defaultMessage="Ingest some CSV File :)"
                 description="Description for the 'Dssama' extension"
                 id="gui.extension.dssama.description"
+            />
+        ),
+        featured: true
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Weather Forecast"
+                description="Name for the 'Weather Forecast' extension"
+                id="gui.extension.weather.name"
+            />
+        ),
+        extensionId: 'weather',
+        iconURL: weatherIconURL,
+        insetIconURL: weatherInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="How is a weather forecast disseminate???"
+                description="Description for the 'Weather Forecast' extension"
+                id="gui.extension.weather.description"
             />
         ),
         featured: true
