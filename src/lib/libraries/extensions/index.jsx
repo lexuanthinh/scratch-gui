@@ -13,6 +13,9 @@ import dssamaInsetIconURL from './pen/pen-small.svg';
 import weatherIconURL from './weather/weather.png';
 import weatherInsetIconURL from './weather/weather-small.png'
 
+import genderIconURL from './gender/gender.png';
+import genderInsetIconURL from './gender/gender-small.png'
+
 import videoSensingIconURL from './videoSensing/video-sensing.png';
 import videoSensingInsetIconURL from './videoSensing/video-sensing-small.svg';
 
@@ -360,6 +363,26 @@ export default [
                 defaultMessage="How is a weather forecast disseminate???"
                 description="Description for the 'Weather Forecast' extension"
                 id="gui.extension.weather.description"
+            />
+        ),
+        featured: true
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Gender Of People"
+                description="Name for the 'Gender Of People' extension"
+                id="gui.extension.gender.name"
+            />
+        ),
+        extensionId: 'gender',
+        iconURL: genderIconURL,
+        insetIconURL: genderInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Is this male or female ???"
+                description="Description for the 'Gender Of People' extension"
+                id="gui.extension.gender.description"
             />
         ),
         featured: true
