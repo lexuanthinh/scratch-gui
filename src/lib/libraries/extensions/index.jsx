@@ -16,6 +16,9 @@ import weatherInsetIconURL from './weather/weather-small.png'
 import genderIconURL from './gender/gender.png';
 import genderInsetIconURL from './gender/gender-small.png'
 
+import clsIconURL from './classificationquestions/classificationquestions.png';
+import clsInsetIconURL from './classificationquestions/classificationquestions-small.png'
+
 import videoSensingIconURL from './videoSensing/video-sensing.png';
 import videoSensingInsetIconURL from './videoSensing/video-sensing-small.svg';
 
@@ -383,6 +386,26 @@ export default [
                 defaultMessage="Is this male or female ???"
                 description="Description for the 'Gender Of People' extension"
                 id="gui.extension.gender.description"
+            />
+        ),
+        featured: true
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Classification Questions"
+                description="Name for the 'Classification Questions' extension"
+                id="gui.extension.classificationquestions.name"
+            />
+        ),
+        extensionId: 'classificationquestions',
+        iconURL: clsIconURL,
+        insetIconURL: clsInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Let's classification questions for VietNamese :)"
+                description="Description for the 'Classification Questions' extension"
+                id="gui.extension.classificationquestions.description"
             />
         ),
         featured: true
